@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(78, 65, 50);
+}
+
 .box {
     position: relative;
     width: 60vw;
@@ -128,4 +132,49 @@
     opacity: 0;
     border: 2px solid white;
     transition-duration:0.5s;
+}
+
+/* PROJET 4 */
+
+.survol4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #a9d5e8;
+}
+
+.btn-item {
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 8px;
+    height: 120px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c2e2f0;
+    font-size: 2em;
+    font-family: sans-serif;
+    transition-duration: 1s;
+    transition-property: filter;
+}
+
+.btn-item:hover{
+    box-shadow: 0px 0px 100px black
+}
+
+.btn-1:hover ~ .btn-2{
+    filter: blur(8px);
+}
+
+.btn-1:hover ~ .btn-3{
+    filter: blur(8px);
+}
+
+.btn-2:hover ~ .btn-3{
+    filter: blur(8px);
+}
+
+.btn-2:hover .btn-item{
+    filter: blur(8px);
 }
