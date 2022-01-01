@@ -1,0 +1,131 @@
+.box {
+    position: relative;
+    width: 60vw;
+    border: 1px solid black;
+    margin: 20px auto;
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+
+    /* PROJET 1 */
+
+
+.P1{
+    width: 10vw;
+    background-color: white;
+    height: 150px;
+    z-index: 2;
+    transition-duration: 0.5s;
+    border: 1.5px solid black;
+    padding: 10px;
+    animation-timing-function: ease-in;
+    font-size: 1em;
+}
+
+.P1copy{
+    width: 10vw;
+    height: 150px;
+    border: 2px dotted black;
+    z-index: 0;
+}
+
+.P1:hover{
+    transform: translate(-55%, -55%);
+}
+
+
+/* PROJET 2 */
+
+.survol2{
+    height: 600px;
+
+}
+
+.P2{
+    height: 80%;
+    width: 300px;
+    background-color: red;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(49, 49, 49);
+    color: whitesmoke;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.P2 hr{
+    border: none;
+    height: 1px;
+    background-color: #FFCE00;
+}
+
+.circle{
+    width: 130px;
+    height: 130px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background-color: #FFCE00;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition-duration: 3s;
+}
+
+/* PROJET 2 AU SURVOL */
+
+.P2:hover{
+    color: rgb(49, 49, 49);
+    background-color: #FFCE00;
+}
+
+.P2:hover .circle{
+    background-color: rgb(49, 49, 49);
+    transform: rotate(180deg);
+}
+
+.P2:hover hr{
+    background-color: rgb(49, 49, 49);
+}
+
+
+/* PROJET 3 */
+
+.survol3{
+    background-color: #a9d5e8;
+}
+
+.btn_style{
+    padding: 20px 30px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transform: translate(0%, 0%);
+}
+
+.btn_animation{
+    color: transparent;
+    cursor: pointer;
+    padding: 20px 30px;
+    
+    border: 2px solid white;
+    opacity: 0.8;
+    transform: translate(0%, -0%);
+
+}
+
+.btn_animation:hover{
+    color: transparent;
+    cursor: pointer;
+    padding: 20px 30px;
+    transform: translate(0%, 0%) scale(1.25);
+    opacity: 0;
+    border: 2px solid white;
+    transition-duration:0.5s;
+}
